@@ -63,11 +63,11 @@ Base URL:
 
 http://localhost:8080/student
 
-Method	Endpoint	Description	Example Body
-POST	/create	Create a new student record	{ "name": "Hari", "age": 21, "course": "B.Tech" }
-GET	/getAll	Get all students	—
-GET	/{studentId}	Get details of a student by ID	—
-DELETE	/{studentId}	Delete a student by ID	—
+Method     	Endpoint   	       Description	
+POST	     /create	      Create a new student record	
+GET	       /getAll	      Get all students	
+GET	       /{studentId}   Get details of a student by ID	
+DELETE  	 /{studentId}	  Delete a student by ID	
 🧪 Example API Testing (Postman)
 ➕ Create a Student
 
@@ -75,16 +75,12 @@ POST → http://localhost:8080/student/create
 Body (JSON):
 
 {
-  "name": "Hari Kumar",
-  "age": 21,
-  "email": "hari@example.com",
-  "course": "Computer Science"
+"studentName":"Minato",
+"emailId":"minat@gmail.com",
+"phoneNo":"2023101905"
 }
 
 
 Response:
 
-{
-  "status": "success",
-  "message": "student created successfully"
-}
+{"status":"success","message":"data saved successfully","studentId":4}
